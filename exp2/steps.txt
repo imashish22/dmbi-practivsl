@@ -1,0 +1,30 @@
+//install docker
+
+run the docker
+pull docker image of zookeeper(cmd/gitbash)
+docker run -d -p 2181:2181 zookeeper
+
+pull docker image of kafka(gitbash)
+docker run -p 9092:9092 \
+-e KAFKA_ZOOKEEPER_CONNECT=<PRIVATE_IP>:2181 \
+-e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://<PRIVATE_IP>:9092 \
+-e KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1 \
+confluentinc/cp-kafka
+
+
+
+create a folder 
+npm init -y
+npm i kafkajs
+
+create files of the gist folder
+
+run admin.js to create a topic 
+
+run producer.js and consumer.js simulataneoualy
+node consumer.js grpname
+
+pass the parameters
+
+
+https://gist.github.com/piyushgarg-dev/32cadf6420c452b66a9a6d977ade0b01

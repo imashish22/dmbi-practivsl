@@ -1,0 +1,21 @@
+[
+    {
+      "id": 4,
+      "name": "Ashish",
+      "age": 30,
+      "city": "New York"
+    },
+    {
+      "id": 5,
+      "name": "Akshar",
+      "age": 25,
+      "city": "Los Angeles"
+    },
+    {
+      "id": 6,
+      "name": "rehman",
+      "age": 35,
+      "city": "Chicago"
+    }
+  ]
+  
